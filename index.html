@@ -8,8 +8,20 @@
 </head>
 <body>
     <div class="forms">
-        <label for="name-label" class="name-label">Nome</label>
-        <input type="text" class="name-input" name="name" placeholder="Digite seu nome">
+        <div class="main-name">
+            <label for="name-label" class="name-label">Nome</label>
+            <input type="text" name="name"  class="name-input" placeholder="Digite seu nome">
+        </div>
+
+        <div class="main-email">
+            <label for="email-label" class="email-label">Email</label>
+            <input type="email" name="email" id="email-input" placeholder="Digite seu email">
+        </div>
+
+        <div class="main-idade">
+            <label for="idade" class="idade-label">Idade</label>
+            <input type="number" name="idade" id="idade-input" min="7" max="99" placeholder="Idade">
+        </div>
     </div>
 </body>
 </html>
