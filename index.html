@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="forms">
@@ -14,13 +15,30 @@
         </div>
 
         <div class="main-email">
-            <label for="email-label" class="email-label">Email</label>
+            <label for="email-label" class="name-label">Email</label>
             <input type="email" name="email" id="email-input" placeholder="Digite seu email">
         </div>
 
         <div class="main-idade">
-            <label for="idade" class="idade-label">Idade</label>
-            <input type="number" name="idade" id="idade-input" min="7" max="99" placeholder="Idade">
+            <label for="idade" class="name-label">Idade</label>
+            <input type="number" name="idade" id="idade-input" min="8" max="99" placeholder="Idade">
+        </div>
+
+        <div class="main-describe">
+            <p>Qual opção melhor descreve sua função atual?</p>
+            <select name="role" id="dropdown">
+                <option disabled selected value>
+                    Selecione sua função atual</option>
+                <option value="student">Estudante</option>
+                <option value="job">Trabalho em tempo integral</option>
+                <option value="learner"></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </div>
+
+        <div class="main-invite">
+
         </div>
     </div>
 </body>
