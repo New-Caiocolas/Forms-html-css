@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="forms">
+        <h1>Formulário</h1>
         <div class="main-name">
             <label for="name-label" class="name-label">Nome</label>
             <input type="text" name="name"  class="name-input" placeholder="Digite seu nome">
         </div>
 
         <div class="main-email">
-            <label for="email-label" class="name-label">Email</label>
-            <input type="email" name="email" id="email-input" placeholder="Digite seu email">
+            <label for="email-label" class="email-label">Email</label>
+            <input type="email" name="email" class="email-input" placeholder="Digite seu email">
         </div>
 
         <div class="main-idade">
-            <label for="idade" class="name-label">Idade</label>
-            <input type="number" name="idade" id="idade-input" min="8" max="99" placeholder="Idade">
+            <label for="idade-label" class="idade-label">Idade</label>
+            <input type="number" name="idade" class="idade-input" min="8" max="99" placeholder="Idade">
         </div>
 
         <div class="main-describe">
@@ -31,14 +33,104 @@
                     Selecione sua função atual</option>
                 <option value="student">Estudante</option>
                 <option value="job">Trabalho em tempo integral</option>
-                <option value="learner"></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option value="learner">Aprendiz em tempo integral</option>
+                <option value="preferno">prefiro não dizer</option>
+                <option value="other">Outros</option>
             </select>
         </div>
 
         <div class="main-invite">
+            <p>Você recomendaria o freeCodeCamp a um amigo?</p>
+            <div>
+                <input type="radio" id="definitivamente" name="brand" value="definitivamente" checked>
+                <label for="definitivamente">Definitivamente</label>
+            </div>
+            <div>
+                <input type="radio" id="pode ser" name="brand" value="pode ser">
+                <label for="pode ser">Pode ser</label>
+            </div>
+            <div>
+                <input type="radio" id="não tenho certeza" name="brand" value="não tenho certeza">
+                <label for="não tenho certeza">Não tenho certeza</label>
+            </div>
+        </div>
 
+        <div class="main-like">
+            <p>Qual é o seu recurso favorito do freeCodeCamp?</p>
+            <select name="role" id="dropdown">
+                <option disabled selected value>Selecione uma opção</option>
+                <option value="challends">Challends</option>
+                <option value="Projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="opensource">Open source</option>
+            </select>
+        </div>
+
+        <div class="main-see">
+            <p>O que você gostaria de ver melhorado? (Marque todos os que se aplicam)</p>
+            <div class="preferselect">
+                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+                <label for="prefer">Front-end projects</label>
+            </div>
+
+            <div class="preferselect">
+                <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">
+                <label for="prefer">Back-end projects</label>
+            </div>
+
+            <div class="preferselect">
+                <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">
+                <label for="prefer">Data Visualization</label>
+            </div>
+
+            <div class="preferselect">
+                <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">
+                <label for="prefer">Challenges</label>
+            </div>
+
+            <div class="preferselect">
+                <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">
+                <label for="prefer">Open Source Community</label>
+            </div>
+
+            <div class="preferselect">
+                <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">
+                <label for="prefer">Gitter help rooms</label>
+            </div>
+
+            <div class="preferselect">
+                <input name="prefer" value="videos" type="checkbox" class="input-checkbox">
+                <label for="prefer">Videos</label>
+            </div>
+
+            <div class="preferselect">
+                <input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">
+                <label for="prefer">City Meetups</label>
+            </div>
+
+            <div class="preferselect">
+                <input name="prefer" value="wiki" type="checkbox" class="input-checkbox">
+                <label for="prefer">Wiki</label>
+            </div>
+
+            <div class="preferselect">
+                <input name="prefer" value="forum" type="checkbox" class="input-checkbox">
+                <label for="prefer">Forum</label>
+            </div>
+
+            <div class="preferselect">
+                <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">
+                <label for="prefer">Additional Courses</label>
+            </div>
+        </div>
+
+        <div class="main-suggestion">
+            <p>Algum comentário ou sugestão?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Digite seu comentário aqui..."></textarea>
+        </div>
+        
+        <div class="button">
+            <button class="btn-enviar">enviar</button>
         </div>
     </div>
 </body>
